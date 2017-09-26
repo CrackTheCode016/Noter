@@ -13,10 +13,13 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationAppearance = UINavigationBar.appearance()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+       
+        
         return true
     }
 
@@ -90,4 +93,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
+var ad = UIApplication.shared.delegate as! AppDelegate
+var context = ad.persistentContainer.viewContext
 

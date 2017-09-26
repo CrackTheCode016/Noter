@@ -15,6 +15,12 @@
 		DE7FF7B51F7864FA00A87D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7FF7B31F7864FA00A87D27 /* LaunchScreen.storyboard */; };
 		DE7FF7C01F7864FA00A87D27 /* NoterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7FF7BF1F7864FA00A87D27 /* NoterTests.swift */; };
 		DE7FF7CB1F7864FA00A87D27 /* NoterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7FF7CA1F7864FA00A87D27 /* NoterUITests.swift */; };
+		DE7FF7D91F78697200A87D27 /* Material View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7FF7D81F78697200A87D27 /* Material View.swift */; };
+		DE7FF7DE1F78705400A87D27 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7FF7DD1F78705400A87D27 /* NoteCell.swift */; };
+		DEDA042B1F795C7D00C013F4 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA04291F795C7D00C013F4 /* Note+CoreDataClass.swift */; };
+		DEDA042C1F795C7D00C013F4 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA042A1F795C7D00C013F4 /* Note+CoreDataProperties.swift */; };
+		DEDA042E1F796E7600C013F4 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA042D1F796E7600C013F4 /* NoteDetailVC.swift */; };
+		DEDA04301F79785400C013F4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA042F1F79785400C013F4 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		DE7FF7C61F7864FA00A87D27 /* NoterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7FF7CA1F7864FA00A87D27 /* NoterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoterUITests.swift; sourceTree = "<group>"; };
 		DE7FF7CC1F7864FA00A87D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7FF7D81F78697200A87D27 /* Material View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Material View.swift"; sourceTree = "<group>"; };
+		DE7FF7DD1F78705400A87D27 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		DEDA04291F795C7D00C013F4 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DEDA042A1F795C7D00C013F4 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DEDA042D1F796E7600C013F4 /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		DEDA042F1F79785400C013F4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,12 @@
 		DE7FF7A61F7864FA00A87D27 /* Noter */ = {
 			isa = PBXGroup;
 			children = (
+				DE7FF7DC1F78701C00A87D27 /* Controller */,
+				DE7FF7DB1F786FAA00A87D27 /* Views */,
+				DE7FF7DA1F786C3200A87D27 /* Model */,
 				DE7FF7A71F7864FA00A87D27 /* AppDelegate.swift */,
-				DE7FF7A91F7864FA00A87D27 /* ViewController.swift */,
-				DE7FF7AB1F7864FA00A87D27 /* Main.storyboard */,
 				DE7FF7B11F7864FA00A87D27 /* Assets.xcassets */,
-				DE7FF7B31F7864FA00A87D27 /* LaunchScreen.storyboard */,
 				DE7FF7B61F7864FA00A87D27 /* Info.plist */,
-				DE7FF7AE1F7864FA00A87D27 /* Noter.xcdatamodeld */,
 			);
 			path = Noter;
 			sourceTree = "<group>";
@@ -126,6 +137,37 @@
 				DE7FF7CC1F7864FA00A87D27 /* Info.plist */,
 			);
 			path = NoterUITests;
+			sourceTree = "<group>";
+		};
+		DE7FF7DA1F786C3200A87D27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEDA04291F795C7D00C013F4 /* Note+CoreDataClass.swift */,
+				DEDA042A1F795C7D00C013F4 /* Note+CoreDataProperties.swift */,
+				DE7FF7AE1F7864FA00A87D27 /* Noter.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE7FF7DB1F786FAA00A87D27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FF7D81F78697200A87D27 /* Material View.swift */,
+				DE7FF7B31F7864FA00A87D27 /* LaunchScreen.storyboard */,
+				DE7FF7AB1F7864FA00A87D27 /* Main.storyboard */,
+				DE7FF7DD1F78705400A87D27 /* NoteCell.swift */,
+				DEDA042F1F79785400C013F4 /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE7FF7DC1F78701C00A87D27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FF7A91F7864FA00A87D27 /* ViewController.swift */,
+				DEDA042D1F796E7600C013F4 /* NoteDetailVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7FF7D91F78697200A87D27 /* Material View.swift in Sources */,
+				DEDA04301F79785400C013F4 /* CardView.swift in Sources */,
+				DEDA042C1F795C7D00C013F4 /* Note+CoreDataProperties.swift in Sources */,
 				DE7FF7AA1F7864FA00A87D27 /* ViewController.swift in Sources */,
+				DE7FF7DE1F78705400A87D27 /* NoteCell.swift in Sources */,
+				DEDA042B1F795C7D00C013F4 /* Note+CoreDataClass.swift in Sources */,
 				DE7FF7A81F7864FA00A87D27 /* AppDelegate.swift in Sources */,
 				DE7FF7B01F7864FA00A87D27 /* Noter.xcdatamodeld in Sources */,
+				DEDA042E1F796E7600C013F4 /* NoteDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
